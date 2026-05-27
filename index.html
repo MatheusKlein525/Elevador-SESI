@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevador SESI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Elevador SESI</h1>
+
+    <div class="painel">
+        <div class="display">
+            Carga Atual: <span id="peso-atual">0</span> kg
+        </div>
+        
+        <div id="alerta-sobrecarga" class="alerta escondido">
+            ⚠️ SOBRECARGA! LIMITE ATINGIDO.
+        </div>
+
+        <div class="botoes">
+            <button id="btn-adicionar" onclick="adicionarPeso()">Adicionar 100kg</button>
+            <button id="btn-resetar" onclick="resetarElevador()">Resetar Carga</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
